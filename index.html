@@ -45,27 +45,28 @@
             <!-- Opening -->
             <section>
                 <img src="images/gdi_logo_badge.png" style="padding: 10px; width:400px;" alt="gdi" />
-                <h3>Intermediate HTML/CSS &amp; Intro to Responsive Design</h3>
+                <h3>Intermediate HTML/CSS<br />(&amp; Intro to Responsive Design)</h3>
             </section>
             <section>
                 <h2>Welcome!</h2>
                 <h4 class="blue">Wifi Info</h4>
                 <p>
-                    <strong>Network: </strong></p>
+                    <strong>Network: First Round Capital guest</strong></p>
                 <p>
-                    <strong>Password: </strong></p>
+                    <strong>Password: frclovesphilly</strong></p>
                 <br/>
                 <h3>Download workshop files</h3>
                 <p>Please download workshop files at:<br />
-                <a href="http://girldevelopit.github.io/gdi-featured-intermediate-html-css/workshop-files.zip">http://girldevelopit.github.io/gdi-featured-intermediate-html-css/workshop-files.zip</a></p>
+                <a href="http://gdiphilly.github.io/intermediate-html-css/workshop-files.zip">http://gdiphilly.github.io/intermediate-html-css/workshop-files.zip</a></p>
             </section>
             <section>
                 <h2>Thanks to our host:</h2>
+                <h3>First Round Capital</h3>
             </section>
             <section>
                 <h3>Class notes</h3>
                 <p>All slides are available at:<br />
-                <a href="http://girldevelopit.github.io/gdi-featured-intermediate-html-css/">http://girldevelopit.github.io/gdi-featured-intermediate-html-css/</a></p>
+                <a href="http://gdiphilly.github.io/intermediate-html-css">http://gdiphilly.github.io/intermediate-html-css</a></p>
             </section>
             <!-- Welcome-->
             <section class="hide-pdf">
@@ -92,11 +93,11 @@
                 <ul>
                     <li>Tell us who you are.</li>
                     <li>What do you hope to get out of this class?</li>
-                    <li>Unlimited amount of money - where would you travel to?</li>
+                    <li>If you could have any animal as a pet, what would it be?</li>
             </section>
             <section>
                 <h2>What we'll be covering in this class</h2>
-                <p>We'll be jumping into HTML/CSS right where the beginner class left off.</p>
+                <p>We'll be jumping into HTML/CSS right where the intro class left off.</p>
                 <p>We will not be going over the previous class, we just don't have the time!</p>
             </section>
             <section>
@@ -108,7 +109,7 @@
             </section>
             <section>
                 <h3>Workshop files</h3>
-                <p>Last reminder to download the files for today's class! </p>
+                <p>Last reminder to download the files for today's class!</p>
                 <ul>
                     <li>We have provided a folder that contains sample images for you to use today. We encourage you to be creative so don't feel like you're restricted to these images</li>
                     <li>We've also included a blank index.html file for you to work from, as well as the final site for you to use as a reference if you get stuck.</li>
@@ -169,7 +170,7 @@
                 <h3>Reset CSS</h3>
                 <div>
                     Most elements:
-                    <pre><code class = "html">
+                    <pre><code class="html">
   margin: 0;
   padding: 0;
   border: 0;
@@ -180,7 +181,7 @@
                 </div>
                 <div>
                     Lists:
-                    <pre><code class = "html">
+                    <pre><code class="html">
   list-style: none;
 </code></pre>
                 </div>
@@ -224,17 +225,17 @@
             <section>
                 <h3>Containers</h3>
                 <p>Wrappers are a good way to center content if the screen width is wider than your content.</p>
-                <pre><code class = "html">
+                <pre><code class="html">
   .container {
-      width: 100%; /* take up full viewport width */
+      width: 100%;       /* take up full viewport width */
       max-width: 1400px; /* if viewport is larger than 1440px, 
                             don't let it take up 100% */
-      margin: 0 auto; /* center content in the viewport */
+      margin: 0 auto;    /* center content in the viewport */
   }
 </code></pre>
                 <ul>
-                    <li>1. The container will take up 100% of the screen if the width of the viewport is less than 1440px.</li>
-                    <li>2. If the viewport is wider than 1440px, it will reach it's max width, and become centered in the viewport.</li>
+                    <li>The container will take up 100% of the screen if the width of the viewport is less than 1440px.</li>
+                    <li>If the viewport is wider than 1440px, it will reach it's max width, and become centered in the viewport.</li>
                 </ul>
             </section>
             <section data-background="#f05b62">
@@ -289,30 +290,25 @@
                 </ul>
             </section>
             <!-- Browser compatibility -->
-            <aside class="notes">up-to-date-stats as of 7/2015</aside>
+            <aside class="notes">See http://caniuse.com/#feat=html5semantic and https://html5test.com/results/desktop.html</aside>
             <section>
                 <h2>What about the browsers?</h2>
-                <p>Percentage of HTML5 Elements supported:</p>
+                <p>HTML5 semantic elements supported on...</p>
                 <ul>
                     <li class="chrome">
-                        <strong>Chrome 43:</strong>
-                        <span class="green">95% supported</span>
+                        <strong class="green">Chrome 26+</strong>
                     </li>
                     <li class="opera">
-                        <strong>Opera 29:</strong>
-                        <span class="blue">94% supported</span>
+                        <strong class="green">Opera 15+</strong>
                     </li>
                     <li class="firefox">
-                        <strong>Firefox 38:</strong>
-                        <span class="blue">84% supported</span>
+                        <strong class="green">Firefox 21+</strong>
                     </li>
                     <li class="webkit">
-                        <strong>Safari 8:</strong>
-                        <span class="blue">71% supported</span>
+                        <strong class="green">Safari 7+</strong>
                     </li>
                     <li class="ie">
-                        <strong>Internet Explorer 11:</strong>
-                        <span class="blue">60% supported</span>
+                        <strong>Internet Explorer 11 (meh)</strong>
                     </li>
 
                 </ul>
@@ -437,8 +433,7 @@
             <section>
                 <h3>Fixed Nav: HTML</h3>
                 <p>Let's include it in a header, since we know we'll be grouping related content here.</p>
-                <pre><code class="xml">
-<header>
+                <pre><code class="xml"><header>
     <nav>
         <ul>
             <li><a href="#home">My Home</a></li>
@@ -453,8 +448,7 @@
                 <h3>Fixed Nav: CSS</h3>
                 <p>Remember, using fixed position is like using absolute position, except that it's fixed to the viewport, not the containing element.</p>
                 <p>We also have to define a width for it, and its location.</p>
-                <pre><code class="css">
-nav {
+                <pre><code class="css">nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -469,8 +463,7 @@ nav {
                 <p>Because we've fixed the nav to the top of the viewport, we need to bump the content of the
                     <code>body</code> down to be visible to the user.</p>
                 <p>This should be the same, or more than, the height of the navigation bar.</p>
-                <pre><code class="css">
-body {
+                <pre><code class="css">body {
     padding-top: 70px;
 }
 nav {
@@ -510,8 +503,7 @@ nav li a {
                 <h3>Fixed Nav: Adding a brand</h3>
                 <p>We can use an
                     <code>H1</code> with text replacement to include a brand, or logo, in the corner that will still work if images are turned off, making it accesible to screen readers.</p>
-                <pre><code class="xml">
-<header>
+                <pre><code class="xml"><header>
     <nav>
     <h1 id="brand">IMA Zebra</h1>
         <ul>
@@ -549,8 +541,7 @@ nav ul {
             <section>
                 <h3>Fixed Nav: Container</h3>
                 <p>Notice how the edge of the nav bumps up against the edge of the browser? Let's fix that by adding a container around it.</p>
-                <pre><code class="xml">
-<header>
+                <pre><code class="xml"><header>
     <nav>
         <div class="container">
             <h1 id="brand">IMA Zebra</h1>
@@ -757,6 +748,10 @@ nav ul {
     border-radius: 50%;
 }</code></pre>
                     <p>Order matters! The non-prefixed version should always go last.</p>
+                </section>
+                <section>
+                    <h3>Things change</h3>
+                    <p><a href="http://shouldiprefix.com/" target="_blank">Should I prefix?</a></p>
                 </section>
                 <section>
                     <h3>NOTE:</h3>
@@ -1008,8 +1003,7 @@ nav ul {
                     <li>Compare and refine the collection - think about what styles you NEED.</li>
                     <li>Grab the code that Google prepares for you and add it to your site!</li>
                 </ol>
-                <pre><code class = "html">
-  @import url(http://fonts.googleapis.com/
+                <pre><code class="html">@import url(http://fonts.googleapis.com/
   css?family=Lato:300,400,700,300italic,400italic|Bree+Serif);
 </code></pre>
                 <a href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Bree+Serif" target="_blank">What does that do?</a>
@@ -1017,8 +1011,7 @@ nav ul {
 
             <section>
                 <h3>Integrating into the CSS</h3>
-                <pre><code class = "html">
-body{
+                <pre><code class="html">body {
   font-family: 'Lato', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -1486,7 +1479,7 @@ background-image: linear-gradient(bottom right, red, white);
         <section>
             <h3>Develop It!</h3>
             <p>Pick a transform property and apply it to an element.</p>
-            <p>Hint: The transforms, like transitions, will only work if the element has a pseudo class, like :hover</p>
+            <p>Hint: Transforms are easier to see in action when applied to a pseudo class like :hover.</p>
             <p>Extra Credit: Use it with transition to make the transform smoother.</p>
         </section>
 
