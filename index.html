@@ -124,6 +124,295 @@
                 <h3>Cheat sheets</h3>
                 <p>We've provided a copy of the site you'll be building today with notes on how to break down the layout of the page.</p>
             </section>
+
+            <!-- Review Terms-->
+            <section>
+             <h3>Review: Terms</h3>
+             <ul>
+               <li>
+                <div class="green">Web design</div>
+                <div>The process of planning, structuring and creating a website</div>
+               </li>
+               <li>
+                <div class="green">Web development</div>
+                <div>The process of programming dynamic web applications</div>
+               </li>
+               <li>
+                <div class="green">Front end</div>
+                <div>The outwardly visible elements of a website or application</div>
+               </li>
+               <li>
+                <div class="green">Back end</div>
+                <div>The inner workings and functionality of a website or application</div>
+               </li>
+             </ul>
+            </section>
+
+            <!-- Review Tools -->
+            <section>
+              <h3>Review: Tools</h3>
+              <ul>
+                <li>
+                  <div class="yellow">Browser</div>
+                  <div>Chrome</div>
+                  <div>Firefox</div>
+                 </li>
+                 <li>
+                  <div class="yellow">Development Toolkit</div>
+                  <div>Chrome - Inspector</div>
+                  <div>Firefox - Firebug</div>
+                 </li>
+                 <li>
+                  <div class="yellow">Text Editor</div>
+                  <div>Sublime Text - Mac or Windows</div>
+                  <div>TextWrangler - Mac</div>
+                  <div>Notepad ++ - Windows</div>
+                 </li>
+              </ul>
+            </section>
+
+            <!-- Review Roles of HTML v CSS -->
+            <section>
+              <h3>Review: Anatomy of a website</h3>
+              <div class="left-align">
+                <span class="blue"> Your Content</span><br />
+                <span class="blue">+ HTML </span>(structure)<br />
+                <span class="blue">+ CSS </span>(presentation)<br />
+                <span class="blue">= Your Website</span>
+                <p>A website is a way to present your content to the world, using HTML and CSS to make it look good.</p>
+              </div>
+            </section>
+            <section>
+              <h3>Review: Anatomy of a website</h3>
+              <div class="yellow"> Concrete example</div>
+              <ul>
+                <li class="fragment"><p>A paragraph is your content</p></li>
+                <li class="fragment">
+                  <div style="font-size: 80%">Putting your content into an HTML tag to make it look like a paragraph is structure</div>
+                  <pre><code class="html">&lt;p>A paragraph is your content&lt;/p></code></pre>
+                </li>
+                <li class="fragment">
+                  <div style="font-size: 80%;">Make the font of your paragraph blue and 18px is presentation</div>
+                  <p class="blue">A paragraph is your content</p>
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <section>
+                <h3>Review: The DOM</h3>
+                <p>Document Object Model</p>
+                <img src="images/DOM1.png" alt="" />
+                <p class="fragment">Everything is a node.</p>
+              </section>
+              <section>
+                <h3>Review: The DOM</h3>
+                <p>A family tree</p>
+                <img src="images/dom_tree.gif" alt="" />
+                <p class="fragment">Parents, children, ancestors, descendents, and siblings.</p>
+              </section>
+            </section>
+
+            <!-- Review HTML element-->
+            <section>
+             <h3>Review: Anatomy of an HTML element</h3>
+             <ul>
+                <li class="fragment">
+                  Element
+                  <ul>
+                   <li>An individual component of HTML</li>
+                   <li>Paragraph, Table, List</li>
+                  </ul>
+                </li>
+                <li class="fragment">
+                  Tag
+                  <ul>
+                    <li>Markers that signal the beginning and end of an element</li>
+                    <li>Opening tag and closing tag
+                      <pre><code class="html">&lt;tagname>Stuff in the middle&lt;/tagname></code></pre>
+                    </li>
+                    <li>
+                      <pre><code class="html">&lt;p>This is a sample paragraph.&lt;/p></code></pre>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h3>Review: HTML elements</h3>
+              <ul>
+                <li class="fragment">
+                  Most elements can have other elements as children
+                  <ul>
+                    <li>Paragraphs, unordered/ordered lists, anchors, spans, divs, and many more</li>
+                  </ul>
+                  <pre><code class="html">&lt;div>
+  &lt;p>
+    &lt;a>&lt;span>&lt;/span>&lt;/a>
+  &lt;/p>
+&lt;/div></code></pre>
+                </li>
+                <li class="fragment">
+                  A few cannot
+                  <ul>
+                    <li>Images, line breaks, scripts, meta data</li>
+                  </ul>
+                  <pre><code class="html">&lt;img />&lt;br /></code></pre>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h3>Review: Anatomy of an HTML element</h3>
+              <ul>
+                <li class="fragment">
+                  Attribute
+                  <ul>
+                    <li>Each element can have a variety of attributes</li>
+                    <li>Language, style, identity, source</li>
+                  </ul>
+                </li>
+                <li class="fragment">
+                  Value
+                  <ul>
+                    <li>Value is the value assigned to a given
+                    attribute.</li>
+                    <li>
+                      <pre><code contenteditable class="html">&lt;p lang="fr">C'est la vie&lt;/p>
+&lt;img src="my.picture.jpg"/></code></pre>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+
+            <!-- What is CSS-->
+            <section>
+              <h3>CSS: Review</h3>
+              <div class="left-align">
+                <p>CSS = Cascading Style Sheets</p>
+                <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
+                <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
+              </div>
+            </section>
+
+
+            <!-- The CSS Rule-->
+            <section>
+              <h3>Review: The CSS Rule</h3>
+<pre><code class="html">selector {
+  property: value;
+}</code></pre>
+              <div class="left-align">
+                <p>A block of CSS is a rule block.</p>
+                <p>The rule starts with a selector.</p>
+                <p>It has sets of properties and values.</p>
+                <p>A property-value pair is a declaration.</p>
+              </div>
+            </section>
+
+            <!-- CSS Syntax -->
+            <section>
+              <h3>Review: CSS Syntax</h3>
+              <div class="left-align">
+                <p>Declarations: Property and value of style you plan use on HTML element.</p>
+                <p>Declarations end with a semicolon</p>
+                <p>Declarations can be grouped and are surrounded by curly brackets.</p>
+              </div>
+<pre><code class="html">selector {
+  property: value;
+  property: value;
+  property: value;
+}</code></pre>
+            </section>
+
+            <!-- Selectors elements-->
+            <section>
+                  <h3>Review: Selecting Elements</h3>
+              <pre><code class="html">p {
+  property: value;
+}</code></pre>
+              <p>Selects all paragraph elements.</p>
+              <div class="fragment">
+                <pre><code class="html">img {
+  property: value;
+}</code></pre>
+                <p>Selects all image elements.</p>
+              </div>
+            </section>
+
+            <!-- Selectors ID-->
+            <section>
+                    <h3>Review: Selecting IDs</h3>
+<pre><code class="html">#footer {
+  property: value;
+}</code></pre>
+              <p>Selects all elements with an id of "footer".</p>
+              <div class="fragment">
+                <pre><code class="html">&lt;p id="footer">Copyright 2011&lt;/p></code></pre>
+                <p>The associated HTML.</p>
+              </div>
+                  </section>
+
+            <!-- Selectors Class-->
+            <section>
+                    <h3>Review: Selecting Classes</h3>
+<pre><code class="html">.warning {
+  color: red;
+}</code></pre>
+              <p>Selects all elements with a class of "warning".</p>
+              <div class="fragment">
+                <pre><code class="html">&lt;p class="warning">Run away!&lt;/p></code></pre>
+                <p>The associated HTML.</p>
+              </div>
+                  </section>
+
+            <!-- Selector position-->
+            <section>
+              <h3>Review: Selecting Relatives</h3>
+<pre><code class="html">p em {
+  color: yellow;
+}</code></pre>
+              <p>Selects all em elements that are within a paragraph</p>
+              <div class="fragment">
+                <pre><code class="html">&lt;p>This is &lt;em>important.&lt;/em>&lt;/p></code></pre>
+                <p>The associated HTML.</p>
+                <div class="fragment">
+<pre><code class="html">p > em {
+  color: yellow;
+}</code></pre>
+                  <p>Same as above, but only selects direct descendents (children).</p>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <section>
+                <h2>CSS Reminders</h2>
+                <ul>
+                  <li>the <em>Cascade</em> aka: Precedence</li>
+                  <li>Inheritance</li>
+                  <li>Specificity</li>
+                </ul>
+                <pre><code class="css">p { color: blue; font-style: italic; }
+p span { font-weight: normal; }
+p { color: red; font-weight: bold; }
+&lt;p>
+  &lt;span>This is the span&lt;/span>
+&lt;/p></code></pre>
+                <p class="fragment" style="font-style: italic; color: red; text-decoration: none;">This is the span</p>
+              </section>
+              <!-- CSS Parsing/Performance -->
+              <section>
+                <h3>A brief note about CSS performance</h3>
+                <p>All other things being equal...</p>
+                <p>Every part of your selector will be checked by the browser, so the shorter you can make it, the better.</p>
+                <pre class="fragment"><code class="html">p a.green {}
+    .green {}</code></pre>
+                <p class="fragment">CSS is parsed from right to left, so the more specific you can be towards the right, the better.</p>
+                <pre class="fragment"><code class="html">div.entry p a {}
+    div.entry p.diary a</code></pre>
+              </section>
+            </section>
             <section data-background="#f05b62">
                 <h1 style="color: #fafafa;">Common Applications</h1>
             </section>
