@@ -921,7 +921,7 @@ nav ul {
                 <p>Our Hero
                     <code>section</code> should look a little something like this:</p>
                 <pre><code class="xml">&lt;section id="hero">
-    <img src="images/zebra.jpg" alt="IMA Zebra" />
+    &lt;img src="images/zebra.jpg" alt="IMA Zebra" />
     <h2>IMA Zebra</h2>
     <span class="city">Africa</span>
 &lt;/section> </code></pre> 
@@ -1264,8 +1264,7 @@ nav ul {
         &lt;/ul>
     &lt;/div>
 &lt;/section></code></pre>
-                <p>Next we'll center the
-                    <code>ul</code> with a very <a href="http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support" target="_blank">flexible technique</a> that will allow us to have a list of any width</p>
+                <p>Next we'll center the <code>ul</code> with a very <a href="http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support" target="_blank">flexible technique</a> that will allow us to have a list of any width</p>
             </section>
             <section>
                 <h3>Develop It!</h3>
@@ -1310,8 +1309,7 @@ nav ul {
                     <li>Compare and refine the collection - think about what styles you NEED.</li>
                     <li>Grab the code that Google prepares for you and add it to your site!</li>
                 </ol>
-                <pre><code class="html">@import url(http://fonts.googleapis.com/
-  css?family=Lato:300,400,700,300italic,400italic|Bree+Serif);
+                <pre><code class="html">@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Bree+Serif);
 </code></pre>
                 <a href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Bree+Serif" target="_blank">What does that do?</a>
             </section>
@@ -1790,6 +1788,66 @@ background-image: linear-gradient(bottom right, red, white);
             <p>Extra Credit: Use it with transition to make the transform smoother.</p>
         </section>
 
+        <!-- Animations-->
+        <section data-background="#f05b62">
+                <h2 style="color: #fafafa;">Animations</h2>
+                <h4 style="color: #fafafa;">animate transitions from one CSS style configuration to another</h4>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <p><a href="http://www.paulrhayes.com/experiments/clock/#clock" target="_blank">Clock</a></p>
+          <p><a href="http://demosthenes.info/blog/604/Seasonal-CSS-Falling-Leaves-In-CSS-3D-With-Realistic-Shadows" target="_blank">Falling leaves</a></p>
+          <p><a href="http://www.paulrhayes.com/experiments/parallax/" target="_blank">Parallax</a></p>
+          <p><a href="http://webdesignerwall.com/trends/47-amazing-css3-animation-demos" target="_blank">Other examples</a></p>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <p><a href="sample-animation.html" target="_blank">Super basic example</a></p>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <h4>Two Components</h4>
+          <ol>
+            <li>style describing the CSS animation</li>
+            <li>a set of keyframes that indicate the start and end states of the animation's style</li>
+          </ol>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <a href="http://leaverou.github.com/animatable/" target="_blank">animatable</a>
+          <pre><code style="line-height:1.4em;">@keyframes bg-animate{
+  from { background-color: slategray }
+  to { background-color: black }
+}
+div#background-color {
+  background-color: slategray;
+  animation-name: bg-animate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}</code></pre>
+        </section>
+        <section>
+          <h2>Benefits of CSS3 Animations</h2>
+          <h4>Over JavaScript Animations</h4>
+          <ul>
+            <li>Easy for simple animations (no JavaScript required)</li>
+            <li>Performance</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Animations vs. Transitions</h2>
+          <p>The main differences are:</p>
+          <ul>
+            <li>Triggering</li>
+            <li>Looping</li>
+            <li>Keyframes</li>
+          </ul>
+        </section>
+
         <section data-background="#f05b62">
                 <h2 style="color: #fafafa;">Responsive Web Design (RWD)</h2>
             </section>
@@ -1902,6 +1960,9 @@ and (orientation : landscape) {
               <li>Orientation - landscape or portrait</li>
               <li>Resolution - retina or normal</li>
             </ul>
+            <p class="fragment">
+                <a href="http://cssmediaqueries.com/overview.html">Here's a list</a>
+            </p>
           </section>
           <section>
             <h2>Mobile First</h2>
@@ -1923,17 +1984,31 @@ and (orientation : landscape) {
           <section>
           <h2>Viewport Meta</h2>
           <p>Use this to control the size of the viewport.</p>
-<pre><code>&lt;meta name="viewport" content="width=device-width, 
-user-scalable=true;"></code></pre>
+<pre style="width:95%;"><code>&lt;meta name="viewport" content="width=device-width, user-scalable=true;"></code></pre>
 <p>Width=device-width makes the viewport the size of the device.</p>
 <p>User-scalable=true allows the user to pinch and zoom on your site.</p>
           </section>
           <section>
-            <h2>Let's develop it!</h2>
-            <p>Let's take a look at our site now on a phone (or you can resize your browser), and find ways to improve it.</p>
-            <p>Add the viewport meta tag to the html.</p>
-            <p>Use media queries to shift elements around on the page and to increase legibilty.</p>
-          </section>
+              <h2>Let's Develop It</h2>
+              <ul>
+                <li>Use media queries to make our site responsive</li>
+                <li>Start small</li>
+                <li>Add the viewport meta tag to the html.</li>
+                <li>You will have a little bit more time than normal</li>
+                <li><a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank">Media queries for standard devices</a></li>
+                <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/css3-media-queries" target="_blank">CSS3 and Media Queries</a></li>
+                <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/responsive-design-in-3-steps" target="_blank">Responsive Design in 3 Easy Steps</a></li>
+              </ul>
+            </section>
+            <section>
+              <h2>Suggestions for smaller screens</h2>
+              <ul>
+                <li>Reduce some large font sizes</li>
+                <li>Change gallery to show one woman per row</li>
+                <li>Make nav items easier to click</li>
+                <li>Permanently show or hide org logos (no hover states for touch devices)</li>
+              </ul>
+            </section>
 
           <section>
               <h2>Retina Images</h2>
@@ -2044,26 +2119,23 @@ user-scalable=true;"></code></pre>
             <section>
               <h2>Some highlights</h2>
               <p>Mixins!</p>
-<pre><code>/* LESS */ .rounded-corners (@radius: 5px) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  -ms-border-radius: @radius;
-  -o-border-radius: @radius;
-  border-radius: @radius;
+<pre><code>/* LESS */
+.rotate (@rotation: 0deg) {
+  -webkit-transform: rotate(@rotation); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(@rotation); /* IE 9 */
+          transform: rotate(@rotation); /* IE 10, Fx 16+, Op 12.1+ */
 }
 
-#footer {
-  .rounded-corners(10px);
+#photo {
+  .rotate(5deg);
 }</code></pre>
 <pre><code>
   /* Compiled CSS read by the browser */
-  #footer {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-}</code></pre>
+  #photo {
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+  }</code></pre>
   </section>
   <section>
     <h2>Nested Rules</h2>
@@ -2123,6 +2195,20 @@ p {
 }</code></pre>
             </section>
             <section>
+                <h2>CSS Preprocessors</h2>
+                <p class="left">Pros:</p>
+                <ul style="width: 100%; clear: both;">
+                    <li>Readability</li>
+                    <li>Maintainability</li>
+                    <li>Use programming patterns (OOCSS)</li>
+                </ul>
+                <p class="left">Cons:</p>
+                <ul style="width: 100%; clear: both;">
+                    <li>Build-chain complexity</li>
+                    <li>Maybe efficient compiled code</li>
+                </ul>
+            </section>
+            <section>
                 <h2>Recap</h2>
                 <ul>
                     <li>New HTML5 elements and features</li>
@@ -2135,6 +2221,12 @@ p {
             </section>
             <section class="hide-pdf" data-background="#f05b62">
                 <h1 style="color: #fafafa;">Questions?</h1>
+            </section>
+            <section>
+                <h2>Get at me!</h2>
+                <p>elise@girldevelopit.com</p>
+                <p><a href="https://twitter.com/Not_Pele" target="_blank">@not_pele</a></p>
+                <p><a href="https://www.linkedin.com/in/EliseWei" target="_blank">on LinkedIn</a></p>
             </section>
             <section>
                 <h2>How did we do?</h2>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Sample Animation</title>
+  <style type="text/css">
+    /* Initial styles for the banner */
+    #banner {
+      width: 300px;
+      height: 100px;
+      background: gray;
+      position:fixed;
+      bottom:-110px;
+      z-index:9999;
+      right:80px;
+    }
+
+    /* Styles describing the animation itself. */
+    #banner {
+      /* Safari and Chrome: */
+      -webkit-animation-name: flyout;
+      -webkit-animation-duration: 8s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-delay: 1s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-direction: normal;
+      -webkit-animation-play-state: running;
+      -webkit-animation-fill-mode: forwards;
+      animation-name: flyout;
+      animation-duration: 8s;
+      animation-timing-function: linear;
+      animation-delay: 1s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
+    }
+    
+    /* Keyframes */      
+    @keyframes flyout {
+        0% {
+          bottom: -110px;
+        }
+        20% {
+          bottom: 0px;
+        }
+        80% {
+          bottom: 0px;
+        }
+        100% {
+          bottom: -110px;
+        }
+    }
+
+    @-webkit-keyframes flyout {
+        0% {
+          bottom: -110px;
+        }
+        20% {
+          bottom: 0px;
+        }
+        80% {
+          bottom: 0px;
+        }
+        100% {
+          bottom: -110px;
+        }
+    }
+
+    /*
+      Second animation similar to the later half of the first one, but triggered on elements with a certain class. We add that class with javascript. */
+    #banner.closeNow{
+      /* Safari and Chrome: */
+      -webkit-animation-name: closeFlyout;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-delay: 0s;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-direction: normal;
+      -webkit-animation-play-state: running;
+      -webkit-animation-fill-mode: forwards;
+      animation-name: closeFlyout;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
+    }
+                              
+    @keyframes closeFlyout {
+       0% {
+          bottom: 0px;
+       }
+       100% {
+          bottom: -110px;
+       }
+    }
+
+    @-webkit-keyframes closeFlyout {
+       0% {
+          bottom: 0px;
+       }
+       100% {
+          bottom: -110px;
+       }
+    }
+  </style>
+</head>
+<body>
+  <div id="banner">
+    <a href="#" id="closer">Click here to close right away.</a><br />Otherwise, wait for it...
+  </div>
+  <script type="text/javascript">
+    var closeLink = document.getElementById('closer');
+    closeLink.onclick = function(event) {
+      var target = (window.event) ? event.srcElement : event.target;
+      var parent = target.parentNode;
+      parent.className = 'closeNow';
+    };
+  </script>
+</body>
+</html>
