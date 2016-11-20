@@ -1788,6 +1788,66 @@ background-image: linear-gradient(bottom right, red, white);
             <p>Extra Credit: Use it with transition to make the transform smoother.</p>
         </section>
 
+        <!-- Animations-->
+        <section data-background="#f05b62">
+                <h2 style="color: #fafafa;">Animations</h2>
+                <h4 style="color: #fafafa;">animate transitions from one CSS style configuration to another</h4>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <p><a href="http://www.paulrhayes.com/experiments/clock/#clock" target="_blank">Clock</a></p>
+          <p><a href="http://demosthenes.info/blog/604/Seasonal-CSS-Falling-Leaves-In-CSS-3D-With-Realistic-Shadows" target="_blank">Falling leaves</a></p>
+          <p><a href="http://www.paulrhayes.com/experiments/parallax/" target="_blank">Parallax</a></p>
+          <p><a href="http://webdesignerwall.com/trends/47-amazing-css3-animation-demos" target="_blank">Other examples</a></p>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <p><a href="sample-animation.html" target="_blank">Super basic example</a></p>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <h4>Two Components</h4>
+          <ol>
+            <li>style describing the CSS animation</li>
+            <li>a set of keyframes that indicate the start and end states of the animation's style</li>
+          </ol>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <a href="http://leaverou.github.com/animatable/" target="_blank">animatable</a>
+          <pre><code style="line-height:1.4em;">@keyframes bg-animate{
+  from { background-color: slategray }
+  to { background-color: black }
+}
+div#background-color {
+  background-color: slategray;
+  animation-name: bg-animate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}</code></pre>
+        </section>
+        <section>
+          <h2>Benefits of CSS3 Animations</h2>
+          <h4>Over JavaScript Animations</h4>
+          <ul>
+            <li>Easy for simple animations (no JavaScript required)</li>
+            <li>Performance</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Animations vs. Transitions</h2>
+          <p>The main differences are:</p>
+          <ul>
+            <li>Triggering</li>
+            <li>Looping</li>
+            <li>Keyframes</li>
+          </ul>
+        </section>
+
         <section data-background="#f05b62">
                 <h2 style="color: #fafafa;">Responsive Web Design (RWD)</h2>
             </section>
@@ -2133,6 +2193,20 @@ p {
 p {
   color: #199FD9;
 }</code></pre>
+            </section>
+            <section>
+                <h2>CSS Preprocessors</h2>
+                <p class="left">Pros:</p>
+                <ul style="width: 100%; clear: both;">
+                    <li>Readability</li>
+                    <li>Maintainability</li>
+                    <li>Use programming patterns (OOCSS)</li>
+                </ul>
+                <p class="left">Cons:</p>
+                <ul style="width: 100%; clear: both;">
+                    <li>Build-chain complexity</li>
+                    <li>Maybe efficient compiled code</li>
+                </ul>
             </section>
             <section>
                 <h2>Recap</h2>
