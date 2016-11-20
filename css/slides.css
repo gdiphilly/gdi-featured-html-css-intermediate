@@ -797,7 +797,7 @@ article.transform-rotate div {
   color: #333;
 }
 /* line 510, source/slides.css */
-article.transform-rotate .example1:hover {
+article.transform-rotate .example1 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -805,7 +805,7 @@ article.transform-rotate .example1:hover {
   transform: rotate(45deg);
 }
 /* line 513, source/slides.css */
-article.transform-rotate .example2:hover {
+article.transform-rotate .example2 {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -813,7 +813,7 @@ article.transform-rotate .example2:hover {
   transform: rotate(-45deg);
 }
 /* line 516, source/slides.css */
-article.transform-rotate .example3:hover {
+article.transform-rotate .example3 {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
@@ -821,7 +821,7 @@ article.transform-rotate .example3:hover {
   transform: rotate(-90deg);
 }
 /* line 519, source/slides.css */
-article.transform-rotate .example4:hover {
+article.transform-rotate .example4 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -890,7 +890,9 @@ article.transform-origin div {
   float: left;
   font-size: 0.4em;
   height: 120px;
-  line-height: 120px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
   margin: 0 20px;
   text-align: center;
   width: 180px;
